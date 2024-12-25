@@ -1,0 +1,45 @@
+:root {
+  /* #70747E */
+  --secondary-700: 112 116 126;
+  /* #888C94 */
+  --secondary-600: 136 140 148;
+  /* #9FA3A9 */
+  --secondary-500: 159 163 169;
+  /* #CFD1D4 */
+  --secondary-400: 207, 209, 212;
+  /* #E8E8EA */
+  --secondary-300: 232 232 234;
+
+  /* #B8BABF */
+  --light: 184 186 191;
+  /* #00933F */
+  --success: 0 147 63;
+  /* #D9A900 */
+  --warning: 217 169 0;
+  /* #1D63D3 */
+  --info: 29 99 211;
+  /* #DB4A40 */
+  --error: 219 74 64;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  color: #121212;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

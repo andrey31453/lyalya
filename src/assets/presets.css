@@ -1,0 +1,3 @@
+input[readonly] {
+  @apply text-secondary-500;
+}
