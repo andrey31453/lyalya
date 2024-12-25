@@ -5,3 +5,9 @@
 @import './presets.css';
 @import './icon.css';
 @import './utils.css';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
