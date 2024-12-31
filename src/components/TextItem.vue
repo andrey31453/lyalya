@@ -1,6 +1,9 @@
 <script setup>
-defineProps({ item: Object })
-const baseUrl = import.meta.env.BASE_URL
+const props = defineProps({ item: Object })
+const imageSrc = `${import.meta.env.BASE_URL}tests/${props.item.image}`.replace(
+	/\/\//,
+	'/',
+)
 </script>
 
 <template>
@@ -10,7 +13,7 @@ const baseUrl = import.meta.env.BASE_URL
 	>
 		<img
 			class="item__img"
-			:src="`${baseUrl}tests/${item.image}`"
+			:src="imageSrc"
 		/>
 
 		<div class="item__title">
