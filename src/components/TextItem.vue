@@ -1,9 +1,7 @@
 <script setup>
 const props = defineProps({ item: Object })
-const imageSrc = `${import.meta.env.BASE_URL}tests/${props.item.image}`.replace(
-	/\/\//,
-	'/',
-)
+const imageSrc =
+	`${import.meta.env.BASE_URL}/tests/${props.item.image}`.replace(/\/\//, '/')
 </script>
 
 <template>
