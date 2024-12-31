@@ -1,15 +1,12 @@
 <template>
-  <section class="background-stars">
+  <div class="background-stars">
     <div class="stars __fsmall"></div>
     <div class="stars __small"></div>
     <div class="stars __fmedium"></div>
     <div class="stars __medium"></div>
     <div class="stars __fbig"></div>
     <div class="stars __big"></div>
-  </section>
-
-
-
+  </div>
 </template>
 
 <style scoped lang="sass">

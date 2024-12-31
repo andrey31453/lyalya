@@ -3,16 +3,48 @@ defineProps({ item: Object })
 </script>
 
 <template>
-	<div class="text-white text-4xl caveat-400">
-		<div
-			:class="[
-				'h-[200px]',
-				'flex justify-center items-center',
-				'relative before:absolute before:inset-0 before:blur before:bg-red-500 before:z-10 *:z-20 before:opacity-10',
-				'border border-primary-500 rounded-md ',
-			]"
-		>
-			{{ item.text }}
+	<div
+		ref="item"
+		class="item"
+	>
+		<img
+			class="item__img"
+			:src="`/tests/${item.image}`"
+		/>
+
+		<div class="item__title">
+			<span class="great-vibes-regular">
+				{{ item.title }}
+			</span>
+		</div>
+
+		<div class="item__description caveat-400">
+			<span
+				v-for="d in item.description"
+				:key="d"
+				v-html="d"
+			/>
 		</div>
 	</div>
 </template>
+
+<style scoped lang="scss">
+.item {
+	@apply relative z-0 flex flex-col gap-2 justify-start items-start py-[92px];
+
+	&__img {
+		@apply shadow-2xl min-h-[200px] rounded-lg;
+	}
+
+	&__title {
+		@apply text-[3.5rem] text-center;
+		@apply p-2 text-secondary-700;
+	}
+
+	&__description {
+		@apply p-2;
+		@apply text-xl text-2xl text-secondary-300;
+		@apply flex flex-col gap-4 justify-start items-start;
+	}
+}
+</style>

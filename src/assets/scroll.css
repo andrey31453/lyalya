@@ -1,29 +1,20 @@
 :root {
-  --scroll-width: 4px;
-  --scroll-color: rgb(var(--secondary-300));
+    --scroll-width: 4px;
+    --scroll-color: rgb(var(--secondary-500));
 }
 
 ::-webkit-scrollbar {
-  width: var(--scroll-width);
-  height: var(--scroll-width);
+    width: var(--scroll-width);
+    height: var(--scroll-width);
 }
 
-::-webkit-scrollbar:hover {
-  --scroll-width: 6px;
-  --scroll-color: rgb(var(--secondary-500));
-}
 
 ::-webkit-scrollbar-button {
-  display: none;
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scroll-color);
-  border-radius: calc(var(--scroll-width));
-  border: solid 0 var(--scroll-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-  --scroll-width: 6px;
-  --scroll-color: rgb(var(--secondary-500));
+    background: var(--scroll-color);
+    border-radius: calc(var(--scroll-width));
+    border: solid 0 var(--scroll-color);
 }

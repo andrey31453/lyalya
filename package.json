@@ -4,12 +4,9 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "vite --host",
-    "preview": "vite preview",
-    "build-only": "vite build",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
-    "format": "prettier --write src/",
-    "generate:icons-type": "node ./src/components/ui/UIcon/typeGenerate.js"
+    "dev": "vite",
+    "build": "vite build --base=lyalya",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
@@ -21,6 +18,7 @@
     "@vueuse/router": "^12.2.0",
     "@zip.js/zip.js": "^2.7.45",
     "chart.js": "^4.4.3",
+    "gh-pages": "^6.2.0",
     "hash-wasm": "^4.11.0",
     "pinia": "^2.3.0",
     "primeicons": "^7.0.0",
