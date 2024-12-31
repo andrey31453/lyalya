@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import BackgroundItems from '@/components/BackgroundItems.vue'
 import BackgroundStars from '@/components/BackgroundStars.vue'
 import TextItem from '@/components/TextItem.vue'
@@ -54,7 +54,9 @@ const textItems = {
 			Веселая мазохистка
 		</h1>
 
-		<div class="py-16 container mx-auto grid grid-cols-12 gap-12 z-20 relative">
+		<div
+			class="py-16 container px-2 mx-auto grid grid-cols-12 gap-12 z-20 relative"
+		>
 			<Icons
 				class="col-span-4"
 				:icons="['pletka', 'posotionSverhu', 'plag', 'trusiki']"

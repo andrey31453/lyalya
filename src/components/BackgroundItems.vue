@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
 	<div class="fixed inset-0 flex flex-wrap justify-between items-center">
 		<div

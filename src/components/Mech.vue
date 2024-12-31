@@ -1,8 +1,8 @@
 <template>
 	<div class="wrapper">
 		<div class="main">
-			<h2 class="first">Понравилось?</h2>
-			<h2 class="second">Понравилось?</h2>
+			<h2 class="first">Привет, красотка)</h2>
+			<h2 class="second">Привет, красотка)</h2>
 		</div>
 	</div>
 </template>

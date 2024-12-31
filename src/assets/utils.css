@@ -1,3 +1,0 @@
-.disabled {
-  @apply text-secondary-500 pointer-events-none cursor-not-allowed;
-}
