@@ -1,19 +1,13 @@
-import { fileURLToPath, URL } from "node:url";
-import { defineConfig } from "vite";
-import vue from "@vitejs/plugin-vue";
-import svgLoader from "vite-svg-loader";
+import { defineConfig } from 'vite'
+import vue from '@vitejs/plugin-vue'
+import svgLoader from 'vite-svg-loader'
+import path from 'path'
 
 export default defineConfig({
-  plugins: [
-    vue({
-      include: [/\.vue$/, /\.md$/],
-    }),
-
-    svgLoader({ svgo: false }),
-  ],
-  resolve: {
-    alias: {
-      "@": fileURLToPath(new URL("./src", import.meta.url)),
-    },
-  },
-});
+	plugins: [vue(), svgLoader({ svgo: false })],
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, 'src'),
+		},
+	},
+})
