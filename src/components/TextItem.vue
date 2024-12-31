@@ -1,5 +1,6 @@
 <script setup>
 defineProps({ item: Object })
+const baseUrl = import.meta.env.BASE_URL
 </script>
 
 <template>
@@ -9,7 +10,7 @@ defineProps({ item: Object })
 	>
 		<img
 			class="item__img"
-			:src="`/tests/${item.image}`"
+			:src="`${baseUrl}tests/${item.image}`"
 		/>
 
 		<div class="item__title">
